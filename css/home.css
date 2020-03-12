@@ -1,11 +1,5 @@
 /* CSS for home.html */
 
-#galleryPic {
-    display: block;
-    width: 200px;
-    height: 100px;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
