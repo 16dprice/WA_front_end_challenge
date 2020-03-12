@@ -1,6 +1,6 @@
 /* CSS for index.html */
 
-#container {
+#enterSiteContainer {
     display: flex;
     width: 100%;
     height: 100%;
@@ -13,7 +13,7 @@
     to   { opacity: 1; transform: scale(1, 1); }
 }
 
-#container button {
+#enterSiteContainer button {
     width: 20%;
     height: 10%;
     padding: 1rem 1rem;
@@ -28,7 +28,7 @@
     animation-fill-mode: forwards;
 }
 
-#container button:hover {
+#enterSiteContainer button:hover {
     cursor: pointer;
 }
 
