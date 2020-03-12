@@ -22,6 +22,11 @@
     font-size: 1.6rem;
 }
 
+@keyframes logo-animation {
+    from {opacity: 0;}
+    to {opacity: 0.5;}
+}
+
 #imgContainer {
     display: flex;
     position: absolute;
@@ -35,5 +40,8 @@
     height: 80%;
     max-width: 100%;
     z-index: -1;
-    opacity: 0.5;
+    animation-name: logo-animation;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
