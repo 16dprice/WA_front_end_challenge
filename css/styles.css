@@ -80,3 +80,11 @@ body {
 .navbar .nav a:hover {
     color: #555;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+    .name {
+        display: none;
+    }
+}

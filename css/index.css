@@ -22,7 +22,7 @@
     border: none;
     opacity: 0;
     animation-name: button-animation;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation-duration: 3s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -49,14 +49,17 @@
 
 @keyframes logo-animation {
     from {opacity: 0;}
-    to {opacity: 0.7;}
+    to {opacity: 1;}
 }
 
 #logo {
     height: 80%;
     max-width: 100%;
+    max-height: 1000px;
     animation-name: logo-animation;
-    animation-duration: 3s;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 4s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
