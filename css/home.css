@@ -1,0 +1,24 @@
+/* CSS for home.html */
+
+#galleryPic {
+    display: block;
+    width: 200px;
+    height: 100px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery img {
+    width: 100%;
+    margin-top: 1rem;
+}
