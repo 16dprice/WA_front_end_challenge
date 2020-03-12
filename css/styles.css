@@ -1,7 +1,67 @@
 /* CSS file used for common CSS */
 
-#galleryPic {
-    display: block;
-    width: 200px;
-    height: 100px;
+:root {
+    --primary-background: #333;
+    --primary-color: #1f4287;
+    --secondary-color: #278ea5;
+    --highlight-color: #278ea5;
+
+    /*--primary-color: #333;*/
+    /*--secondary-color: #444;*/
+    /*--overlay-color: rgba(0,0,0,0.7);*/
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAVBAR */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    background-color: var(--primary-background);
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .logo {
+    max-height: 100px;
+}
+
+.navbar .name {
+    grid-column: 2/4;
+}
+
+.navbar .nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    padding: 0 1.5rem;
+}
+
+.navbar .nav a:hover {
+    color: #555;
 }
