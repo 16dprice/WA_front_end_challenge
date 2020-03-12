@@ -8,23 +8,34 @@
     justify-content: center;
 }
 
+@keyframes button-animation {
+    from { opacity: 0; transform: scale(2, 2); }
+    to   { opacity: 1; transform: scale(1, 1); }
+}
+
 #container button {
     width: 20%;
     height: 10%;
     padding: 1rem 1rem;
     background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
     border-radius: 1rem;
+    border: none;
+    opacity: 0;
+    animation-name: button-animation;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+#container button:hover {
+    cursor: pointer;
 }
 
 #loginButton {
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
-}
-
-@keyframes logo-animation {
-    from {opacity: 0;}
-    to {opacity: 0.5;}
 }
 
 #imgContainer {
@@ -34,12 +45,17 @@
     height: 95%;
     align-items: center;
     justify-content: center;
+    z-index: -1;
+}
+
+@keyframes logo-animation {
+    from {opacity: 0;}
+    to {opacity: 0.5;}
 }
 
 #logo {
     height: 80%;
     max-width: 100%;
-    z-index: -1;
     animation-name: logo-animation;
     animation-duration: 4s;
     animation-timing-function: ease-out;
