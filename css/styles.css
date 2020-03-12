@@ -5,10 +5,7 @@
     --primary-color: #1f4287;
     --secondary-color: #278ea5;
     --highlight-color: #278ea5;
-
-    /*--primary-color: #333;*/
-    /*--secondary-color: #444;*/
-    /*--overlay-color: rgba(0,0,0,0.7);*/
+    --text-color: #fff;
 }
 
 * {
@@ -19,7 +16,7 @@
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 
 ul {
@@ -46,7 +43,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .navbar .logo {
