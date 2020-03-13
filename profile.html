@@ -2,6 +2,31 @@
     <head>
         <link rel="stylesheet" href="css/profile.css" />
         <link rel="stylesheet" href="css/styles.css" />
+
+        <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- Simple JS for lightbox -->
+        <script src="js/simple-lightbox.min.js"></script>
+
+        <script>
+            // setup lightbox
+            $(function() {
+                const $gallery = $('.gallery-column a').simpleLightbox();
+            });
+
+            // setup collapsible navbar menu
+            $( function() {
+                $( ".navbar-mobile" ).accordion({
+                    collapsible: true,
+                    active: false
+                });
+            } );
+        </script>
     </head>
 
     <body>
@@ -14,6 +39,16 @@
                     <li><a href="home.html">Home</a></li>
                     <li><a href="profile.html">Profile</a></li>
                 </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar-mobile">
+            <button type="button" class="collapsible"  onclick="toggleMobileMenu()">
+
+            </button>
+            <div class="menu-items">
+                <a id="homeDropdownItem" href="home.html">Home</a>
+                <a id="profileDropdownItem" href="profile.html">Profile</a>
             </div>
         </nav>
 

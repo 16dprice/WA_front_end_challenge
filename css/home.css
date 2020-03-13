@@ -31,6 +31,8 @@
 
     .gallery {
         grid-template-columns: 1fr;
+        width: 80%;
+        margin: 4rem auto;
     }
 
     .gallery img:hover {
