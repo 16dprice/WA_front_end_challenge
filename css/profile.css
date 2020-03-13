@@ -1,5 +1,9 @@
 /* CSS for profile.html */
 
+h2 {
+    text-transform: uppercase;
+}
+
 .v-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
